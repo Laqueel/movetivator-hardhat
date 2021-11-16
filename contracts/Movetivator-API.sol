@@ -136,3 +136,65 @@ contract Movetivator is ChainlinkClient {
     }
 
 }
+-------------------------------------------------------------------------------------------
+PAYABLE FUNCTION WHICH CAN RECEIVE ETH 
+//  a. = probably syntax errors like missing or wrong placed brackets
+    b. = probably spelling errors
+    c. IF (a. or b. ) {let me know();}
+/*
+mapping (address => uint) balances // track/increment sender balance/amount
+function invest() external payable // external.public uses more gas when used with large arrays of data.
+                                   // payable indicates that this contract can accept ETH
+{
+if (msg.sender < 25$)              // a. must be ETH/WEI not $. b. solution for ETH/$ pair price change. 
+{ revert ();}                      // specifies to revert transaction when bool of IF is true   
+balances [msg.sender] += msg.value // track/ increment sender balance/amount 
+                                   // balances ??
+                                   // += increment 
+                                   // msg.value = sent amaount
+function balanceOf() 
+external view returns (uint)       // view enables reading of balances(?)
+                                   // return specifies datatype 
+{
+return address (this).balance;     // this refers to contract
+                                   // balance specifies field in contract
+}
+
+}
+*/
+-------------------------------------------------------------------------------------------
+Check every sunday 12pm if pace of account A is smaller or equal 15 than send X ETH/WEI to account A
+
+
+
+// PAYABLE FUNCTION WHICH CAN RECEIVE ETH / which lets the contract receive ETH/WEI.
+
+/*  a. = probably syntax errors like missing or wrong placed brackets
+    b. = probably spelling errors
+    c. IF (a. or b. ) {let me know();}
+*/
+pragma solidity 0.8.0; 
+contract RecieveEth{
+    
+
+mapping (address => uint) balances; // track/increment sender balance/amount
+function invest() external payable // external.public uses more gas when used with large arrays of data.
+                                   // payable indicates that this contract can accept ETH
+{
+if (msg.value < 25Eth)              // a. must be ETH/WEI not $. b. solution for ETH/$ pair price change. 
+{ revert ()};                       // specifies to revert transaction when bool of IF is true   
+
+balances [msg.sender] += msg.value // track/ increment sender balance/amount 
+                                   // balances ??
+                                   // += increment 
+                                   // msg.value = sent amaount
+function balanceOf() 
+external view returns (uint)       // view enables reading of balances(?)
+                                   // return specifies datatype 
+{
+return address (this).balance;     // this refers to contract
+                                   // balance specifies field in contract
+}
+
+
+}
