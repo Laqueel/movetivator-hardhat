@@ -169,10 +169,7 @@ Check every sunday 12pm if pace of account A is smaller or equal 15 than send X 
 
 // PAYABLE FUNCTION WHICH CAN RECEIVE ETH / which lets the contract receive ETH/WEI.
 
-/*  a. = probably syntax errors like missing or wrong placed brackets
-    b. = probably spelling errors
-    c. IF (a. or b. ) {let me know();}
-*/
+
 pragma solidity 0.8.0; 
 contract RecieveEth{
     
