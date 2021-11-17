@@ -163,6 +163,7 @@ return address (this).balance;     // this refers to contract
 }
 */
 -------------------------------------------------------------------------------------------
+PACE FUCNTION
 Check every sunday 12pm if pace of account A is smaller or equal 15 than send X ETH/WEI to account A
 
 
